@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вступити до лав ЗСУ</title>
+</head>
+    <body>
+        <header></header>
+        <main class="iframe-main-container" role="main">
+            <form id="iframe-joinForm" method="POST" action="">
+                <fieldset>
+                    <legend class="iframe-titleForm">
+                        Якщо маєте бажання приєднатися до лав ЗСУ, заповніть форму
+                    </legend>
+                    <label class="iframe-textForm">
+                        Ім'я
+                        <input placeholder="ваше ім'я" required type="text" name="name">
+                    </label>
+                    <br>
+                    <label class="iframe-textForm">
+                        Прізвище
+                        <input placeholder="ваше прізвище" required type="text" name="lastname">
+                    </label>
+                    <br>
+                    <label class="iframe-textForm">
+                        Вік
+                        <input placeholder="ваш вік" required type="number" min="18" name="age">
+                    </label>
+                    <br>
+                    <label class="iframe-textForm">
+                        Завантажте скани документів:<br>
+                        <input type="file" name="doc" required>
+                    </label>
+                </fieldset>
+                <button class="iframe-textButton" type="submit" value="send">
+                    Відправити
+                </button>
+                <button class="iframe-textButton" type="reset" value="reset">
+                    Відмінити
+                </button>
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>

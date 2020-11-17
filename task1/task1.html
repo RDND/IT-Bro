@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Земельні ділянки</title>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                padding: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="geo-header">
+            <h2 class="stg-main-title">
+                Земельні ділянки
+            </h2>
+            <span>
+                земельні ділянки - тут ви можете вибрати, якщо заповните форму
+            </span>
+            <img src="img/Gutsik_sergeant.jpg" alt="Сержант Гуцик" style="width:10%;height:10%;">
+            <nav class="geo-nav">
+                <span class="geo-header-title">
+                    Навігація
+                </span>
+                <ul class="geo-nav-list">
+                    <li>
+                        <a href="#map">
+                            Карта земельних ділянок
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#listOfGeokadast">
+                            Список земельних ділянок
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#formForRequest">
+                            Форма заявки для отримання земельної ділянки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#geo-contacts">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="geo-main-container" role="main">
+            <table id="map">
+                <caption class="geo-title">
+                    Карта земельних ділянок
+                </caption>
+                <tr>
+                    <th rowspan="2">1</th>
+                    <th rowspan="3">2</th>
+                    <th>3</th>
+                    <th colspan="4">4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th rowspan="2">7</th>
+                </tr>
+                <tr>
+                    <th>8</th>
+                    <th>9</th>
+                    <th colspan="2">10</th>
+                    <th>11</th>
+                    <th colspan="2" rowspan="2">12</th>
+                </tr>
+                <tr>
+                    <th>13</th>
+                    <th>14</th>
+                    <th>15</th>
+                    <th colspan="2" rowspan="2">16</th>
+                    <th>17</th>
+                    <th>18</th>
+                </tr>
+                <tr>
+                    <th>19</th>
+                    <th colspan="2" rowspan="2">20</th>
+                    <th>21</th>
+                    <th>22</th>
+                    <th>23</th>
+                    <th rowspan="3">24</th>
+                    <th>25</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">26</th>
+                    <th>27</th>
+                    <th colspan="2">28</th>
+                    <th>29</th>
+                    <th>30</th>
+                    <th rowspan="2">38</th>
+                </tr>
+                <tr>
+                    <th>31</th>
+                    <th>32</th>
+                    <th>33</th>
+                    <th>34</th>
+                    <th>35</th>
+                    <th>36</th>
+                    <th>37</th>
+                </tr>
+            </table>
+            <h3 class="geo-title">Список вільних земельних ділянок</h3>
+            <ul id="listOfGeokadast">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li>18</li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li>32</li>
+                <li>33</li>
+                <li>34</li>
+                <li>35</li>
+                <li>36</li>
+                <li>37</li>
+                <li>38</li>
+            </ul>
+            <form id="formForRequest" method="POST">
+                <h4 class="geo-textForm">Форма для запиту на отримання земельної ділянки</h4>
+                <fieldset>
+                    <label class="geo-textForm">
+                        ПІП
+                        <input placeholder="прізвище, ім'я, по-батькові" type="text" name="name" required>
+                    </label>
+                    <br>
+                    <label class="geo-textForm">
+                        Фото посвідчення УБД
+                        <input type="file" name="img" accept="image/*" required>
+                    </label>
+                    <br>
+                    <label class="geo-textForm">
+                        Номер обраної земельної ділянки
+                        <input placeholder="№ зем.ділянки" type="number" name="numberOfLand" required>
+                    </label>
+                    <br>
+                    <label class="geo-textForm">
+                        Телефон у форматі +380xxxxxxxxx, де замість x мають бути цифри
+                        <input type="tel" pattern="^\+380\d{2}\d{7}$" value="+380" maxlength="13" name="phone">
+                    </label>
+                </fieldset>
+                <button class="geo-textButton" type="submit" value="send">
+                    Відправити
+                </button>
+                <button class="geo-textButton" type="reset" value="reset">
+                    Відмінити
+                </button>
+            </form>
+        </main>
+        <footer class="geo-footer">
+            <a href="https://land.gov.ua">
+                <h2 class="geo-titleFooter">
+                    ДЕРЖГЕОКАДАСТР
+                </h2>
+            </a>
+            <ul class="geo-contacts" id="geo-contacts">
+                <li>
+                    Контактний номер телефону розробника цього сайту : +38 (068) 120-25-39.
+                </li>
+                <li>
+                    Електронна поштова скринька: rednada20064@gmail.com
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

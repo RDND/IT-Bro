@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Розмитнення євроблях</title>
+</head>
+<body>
+<header class="euro-header">
+    <h2 class="euro-main-title">
+        Розмитнення євроблях
+    </h2>
+</header>
+<main class="euro-main-container" role="main">
+    <h3>
+        Злочинна влада прийняла рішення дозволити кожному атовцю по одній євроблясі.
+    </h3>
+    <form id="euro-requestForm" method="POST" action="">
+        <h4>
+            Для можливості отримати автівку заповніть форму
+        </h4>
+        <fieldset>
+            <legend>
+                Обране/бажане авто
+            </legend>
+            <label for="type">Тип авто</label>
+            <select id="type" name="type">
+                <option value="hatchback">Hatchback</option>
+                <option value="sedan">Sedan</option>
+                <option value="coupe">Coupe</option>
+                <option value="crossover">Crossover</option>
+            </select>
+            <label for="brand">Марка авто</label>
+            <select id="brand" name="brand">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                <option value="seat">Seat</option>
+            </select>
+            <label for="country">Країна реєстрації</label>
+            <select id="country" name="country">
+                <option value="austria">Austria</option>
+                <option value="belgium">Belgium</option>
+                <option value="bulgaria">Bulgaria</option>
+                <option value="croatia">Croatia</option>
+                <option value="cyprus">Cyprus</option>
+                <option value="czech_republic">Czech Republic</option>
+                <option value="denmark">Denmark</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                Особисті дані
+            </legend>
+            <label class="euro-textForm">
+                ПІП
+                <input placeholder="прізвище, ім'я, по-батькові" type="text" name="name" required>
+            </label>
+            <label class="euro-textForm">
+                Телефон у форматі +380xxxxxxxxx
+                <input type="tel" pattern="^\+380\d{2}\d{7}$" value="+380" maxlength="13" name="phone">
+            </label>
+            <label class="euro-textForm">
+                УБД
+                <input placeholder="№ посвідчення" type="text" name="idDocument" required>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                Чи завозили раніше євробляхи?
+            </legend>
+            <label>
+                Так
+                <input type="radio" name="serving" value="brought_car">
+            </label>
+            <label>
+                Ні
+                <input type="radio" name="serving" value="dont_brought_car">
+            </label>
+        </fieldset>
+        <button class="euro-textButton" type="submit" value="send">
+            Відправити
+        </button>
+        <button class="euro-textButton" type="reset" value="reset">
+            Відмінити
+        </button>
+    </form>
+</main>
+<footer class="euro-footer"></footer>
+</body>
+</html>
